@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+	<class>MainWindow</class>
+	<widget class="QMainWindow" name="MainWindow">
+		<property name="geometry">
+			<rect>
+				<x>0</x>
+				<y>0</y>
+				<width>400</width>
+				<height>400</height>
+			</rect>
+		</property>
+		<widget class="QWidget" name="centralWidget">
+			<layout class="QVBoxLayout">
+				<item>
+					<widget class="QLabel" name="titleLabel">
+						<property name="text">
+							<string>手写数字识别系统</string>
+						</property>
+						<property name="alignment">
+							<set>Qt::AlignCenter</set>
+						</property>
+					</widget>
+				</item>
+				<item>
+					<widget class="QWidget" name="canvasWidget" native="true">
+						<property name="minimumSize">
+							<size>
+								<width>280</width>
+								<height>280</height>
+							</size>
+						</property>
+					</widget>
+				</item>
+				<item>
+					<layout class="QHBoxLayout">
+						<item>
+							<widget class="QPushButton" name="clearButton">
+								<property name="text">
+									<string>清除</string>
+								</property>
+							</widget>
+						</item>
+						<item>
+							<widget class="QPushButton" name="recognizeButton">
+								<property name="text">
+									<string>识别</string>
+								</property>
+							</widget>
+						</item>
+					</layout>
+				</item>
+				<item>
+					<widget class="QLabel" name="resultLabel">
+						<property name="text">
+							<string>结果：</string>
+						</property>
+						<property name="alignment">
+							<set>Qt::AlignCenter</set>
+						</property>
+					</widget>
+				</item>
+			</layout>
+		</widget>
+	</widget>
+	<resources/>
+	<connections/>
+</ui>
